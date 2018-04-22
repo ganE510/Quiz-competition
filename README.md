@@ -6,11 +6,11 @@ Our project is to create an entertaining application that supports two users pai
 We will use server to store questions and user's information. Web server will also compute users' experience and rank ,then retuen to clients.
 <p>
 </p>
-We will make the transmission between clients and server work until April 6th.
-<p>
-</p>
 —————————————————————————————————————————
 <p>
 </p>
-build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，UserInfoClient 是Web Service。目前客户端中缺少jersey.client jar包，同时在tomcat运行web service时有404报错
+build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，UserInfo 是Web Service。先在本地的tomcat运行 UserInfo，然后运行 UserInfoClient 应输出 name=“Pavithra” age=25 的信息
+<p>
+</p>
+目前客户端中缺少jersey.client jar包，同时在tomcat运行web service时有404报错。
 <p>
