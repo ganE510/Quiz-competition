@@ -1,0 +1,91 @@
+ *{margin:0;padding:0;}
+html, body {
+	height: 100%;
+}
+
+html {
+	background-image: url('img/cover.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+body {
+	background-color: #FFA07A;
+	background-position: center;
+	background-repeat: repeat;
+	font-family:  sans-serif,'Raleway', 'Arial';
+}
+
+.countdown-container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+.clock-item .inner {
+	height: 0px;
+	position: relative;	
+	width: 80%;
+	float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+	margin-top: 10%;	
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+	float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+}
+.question-text{	
+	font-size: 25px;
+	font-weight: bold;	
+}
+.player-info{
+	float: none;  
+    display: block;  
+    margin-left: 10%;  
+    margin-right: auto; 
+}
+
+.text {
+	color: #fff;	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: 50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 35px;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}

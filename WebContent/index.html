@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap 模板</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+      <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/kinetic.js"></script>
+	<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+	
+	
+	
+	<script src="js/baidu.js"></script>
+	
+   <body>
+   
+   <div id="jsCountdown">
+    <span id="day">01天</span>
+    <span id= "hour">02:</span>
+    <span id="min">03:</span>
+    <span id="second">04</span>
+	</div>
+
+
+
+	<div class="countdown countdown-container container">
+ <div class="clock row">
+  <div class="clock-item clock-days countdown-time-value col-sm- col-md-">
+   <div class="wrap">
+    <div class="inner">
+     <div id="canvas-days" class="clock-canvas"></div>
+     <div class="text">
+      <p class="val"></p>
+      <p class="type-days type-time">DAYS</p>
+     </div><!-- /.text -->
+    </div><!-- /.inner -->
+   </div><!-- /.wrap -->
+  </div><!-- /.clock-item -->
+  <div class="clock-item clock-hours countdown-time-value col-sm- col-md-">
+   <div class="wrap">
+    <div class="inner">
+     <div id="canvas-hours" class="clock-canvas"></div>
+     <div class="text">
+      <p class="val"></p>
+      <p class="type-hours type-time">HOURS</p>
+     </div><!-- /.text -->
+    </div><!-- /.inner -->
+   </div><!-- /.wrap -->
+  </div><!-- /.clock-item -->
+  <div class="clock-item clock-minutes countdown-time-value col-sm- col-md-">
+   <div class="wrap">
+    <div class="inner">
+     <div id="canvas-minutes" class="clock-canvas"></div>
+     <div class="text">
+      <p class="val"></p>
+      <p class="type-minutes type-time">MINUTES</p>
+     </div><!-- /.text -->
+    </div><!-- /.inner -->
+   </div><!-- /.wrap -->
+  </div><!-- /.clock-item -->
+  <div class="clock-item clock-seconds countdown-time-value col-sm- col-md-">
+   <div class="wrap">
+    <div class="inner">
+     <div id="canvas-seconds" class="clock-canvas"></div>
+     <div class="text">
+      <p class="val"></p>
+      <p class="type-seconds type-time">SECONDS</p>
+     </div><!-- /.text -->
+    </div><!-- /.inner -->
+   </div><!-- /.wrap -->
+  </div><!-- /.clock-item -->
+ </div><!-- /.clock -->
+</div><!-- /.countdown-wrapper -->
+      
+   </body>
+</html>
