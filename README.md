@@ -13,6 +13,7 @@ build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，UserInfo 是We
 http://localhost:8080/RESTfulWS/rest/UserService/getInfo 可以得到字符串“Hello,RESTful web service!”
 http://localhost:8080/RESTfulWS/rest/UserService/name/xxx 返回用户名 xxx
 http://localhost:8080/RESTfulWS/rest/UserService/age/23   返回年龄 23
+运行UserInfoClient.java, 得到当前用户名
 <p>
 </p>
 配置：jersey 2.26-b07, Tomcat 7.0
