@@ -9,12 +9,8 @@ We will use server to store questions and user's information. Web server will al
 —————————————————————————————————————————
 <p>
 </p>
-build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，UserInfo 是Web Service
-http://localhost:8080/RESTfulWS/rest/UserService/getInfo 可以得到字符串“Hello,RESTful web service!”
-http://localhost:8080/RESTfulWS/rest/UserService/name/xxx 返回用户名 xxx
-http://localhost:8080/RESTfulWS/rest/UserService/age/23   返回年龄 23
-运行UserInfoClient.java, 得到当前用户名
+build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，UserInfo 是Web Service。先在本地的tomcat运行 UserInfo，然后运行 UserInfoClient 应输出 name=“Pavithra” age=25 的信息
 <p>
 </p>
-配置：jersey 2.26-b07, Tomcat 7.0
+目前客户端中缺少jersey.client jar包，同时在tomcat运行web service时有404报错。
 <p>
