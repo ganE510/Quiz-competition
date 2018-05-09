@@ -9,6 +9,7 @@ We will use server to store questions and user's information. Web server will al
 <p>
 </p>
 —————————————————————————————————————————
+Restful Web Service:
 
 build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，
 UserInfo 是Web Service 
@@ -19,7 +20,15 @@ http://localhost:8080/RESTfulWS/rest/UserService/age/23   返回年龄 23
 配置：jersey 2.26-b07, Tomcat 7.0 
 
 --------------------------------------
-搭建了zookeeper+Dubbo 框架
+功能场景：
+服务A负责用户的登录注册，登录或注册成功之后，则向服务B发送消息，由服务B来从数据库中随机抽取题目返回给用户。
+
+Detail：
+Zookeeper搭建集群环境，见截图《zookeeper集群环境截图》
+
+
 配置：zookeeper 3.4.12
       Dubbo 2.5.4
       Spring 5.0.0
+      
+   
