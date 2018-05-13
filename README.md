@@ -28,8 +28,12 @@ http://localhost:8080/RESTfulWS/rest/UserService/age/23   返回年龄 23
 服务间通信：应用Dubbo框架基于RPC协议实现
 
 Detail：
+
 应用zookeeper封装各个服务，部署在服务器上，向客户端提供接口，并搭建集群环境, 见截图《zookeeper集群环境截图》
+
 项目所用到的jar包, 见文件夹jars
+
 配置：zookeeper 3.4.12, Dubbo 2.5.4, Spring 5.0.0
+
 语言：java
        
