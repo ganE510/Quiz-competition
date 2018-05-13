@@ -8,27 +8,28 @@ Our project is to create an entertaining application that supports two users pai
 We will use server to store questions and user's information. Web server will also compute users' experience and rank ,then retuen to clients.
 <p>
 </p>
-—————————————————————————————————————————
-Restful Web Service:
 
-build/classes/com/eviac/blog 中的 UserInfoClient 是客户端，
-UserInfo 是Web Service 
+------------------------------------------------------------
+功能场景：
+服务1负责用户的登录注册，登录或注册成功之后，则向服务2发送消息，由服务B来从数据库中随机抽取题目返回给用户。
+
+-------------------------------------------------------------
+HTML前端, 见WebContent文件夹
+
+服务1：见src/com/eviac/blog文件夹
+其中，UserInfo 是Web Service, UserInfoClient 是测试demo客户端，
 http://localhost:8080/RESTfulWS/rest/UserService/getInfo 可以得到字符串“Hello,RESTful web service!” http://localhost:8080/RESTfulWS/rest/UserService/name/xxx 返回用户名 xxx 
 http://localhost:8080/RESTfulWS/rest/UserService/age/23   返回年龄 23 
 运行UserInfoClient.java, 得到当前用户名 
+配置：jersey 2.26-b07, Tomcat 7.0.85 
 
-配置：jersey 2.26-b07, Tomcat 7.0 
+服务2：见build/classes/com/eviac/blog文件夹
 
---------------------------------------
-功能场景：
-服务A负责用户的登录注册，登录或注册成功之后，则向服务B发送消息，由服务B来从数据库中随机抽取题目返回给用户。
+服务间通信：应用Dubbo框架基于RPC协议实现
 
 Detail：
-Zookeeper搭建集群环境，见截图《zookeeper集群环境截图》
-
-
-配置：zookeeper 3.4.12
-      Dubbo 2.5.4
-      Spring 5.0.0
-      
-   
+应用zookeeper封装各个服务，部署在服务器上，向客户端提供接口，并搭建集群环境, 见截图《zookeeper集群环境截图》
+项目所用到的jar包, 见文件夹jars
+配置：zookeeper 3.4.12, Dubbo 2.5.4, Spring 5.0.0
+语言：java
+       
