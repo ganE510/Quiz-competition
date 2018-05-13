@@ -33,7 +33,7 @@ Detail：
 
 项目所用到的jar包, 见文件夹jars
 
-配置：zookeeper 3.4.12, Dubbo 2.5.4, Spring 5.0.0
+配置：zookeeper 3.4.12, Dubbo 2.5.4
 
 语言：java
        
