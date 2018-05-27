@@ -1,5 +1,4 @@
 
-
 # Quiz-competition
 </p>
 Our project is to create an entertaining application that supports two users paired with each other randomly and trying to answering as many questions correctly as they could in a given period. Users need to sign in to the app before starting competition. The triumph is evaluated by the answering speed and correctness.The questions' number and content will be maintained by using cloud storage.
@@ -36,4 +35,10 @@ Detail：
 配置：zookeeper 3.4.12, Dubbo 2.5.4
 
 语言：java
-       
+
+-------------------------------------------------------------
+使用Docker创建两个container，均配置tomcat
+
+两个container里各有一个war包，这两个war包提供不一样的服务
+
+创建clusters，并初始化一个swarm（“dockerized” cluster）。
