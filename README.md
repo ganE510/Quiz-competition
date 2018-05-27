@@ -39,7 +39,7 @@ Detail：
 -------------------------------------------------------------
 使用Docker创建两个container（见截图），均配置tomcat
 
-两个container里各有一个war包，这两个war包提供不一样的服务
+两个container里各添加一个war包（见截图），这两个war包提供不一样的服务
 
 创建clusters，并初始化一个swarm（“dockerized” cluster）。为swarm manager配置shell，并将app部署到swarm manager管辖的各台机器节点上。
 
