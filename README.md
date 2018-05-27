@@ -37,10 +37,14 @@ Detail：
 语言：java
 
 -------------------------------------------------------------
-使用Docker创建两个container（见截图），均配置tomcat
+Docker
 
-两个container里各添加一个war包（见截图），这两个war包提供不一样的服务
+创建两个镜像image，分别为 jamtur01/tomcat 与 jamtur02/tomcat,见截图image.jpg
+并分别部署 Cookiewinner-Server.jar 和 quiz-competition.jar，
+分别创建两个container（见截图），均配置tomcat
 
+建立docker-machine，实例有default,myvm,myvm1,myvm2
 创建clusters，并初始化一个swarm（“dockerized” cluster）。为swarm manager配置shell，并将app部署到swarm manager管辖的各台机器节点上。
+建立的swarm详见截图swarm.jpg，设定default为machine manager
 
 Docker模型（见截图）
