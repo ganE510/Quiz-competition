@@ -37,8 +37,10 @@ Detail：
 语言：java
 
 -------------------------------------------------------------
-使用Docker创建两个container，均配置tomcat
+使用Docker创建两个container（见截图），均配置tomcat
 
 两个container里各有一个war包，这两个war包提供不一样的服务
 
-创建clusters，并初始化一个swarm（“dockerized” cluster）。
+创建clusters，并初始化一个swarm（“dockerized” cluster）。为swarm manager配置shell，并将app部署到swarm manager管辖的各台机器节点上。
+
+Docker模型（见截图）
